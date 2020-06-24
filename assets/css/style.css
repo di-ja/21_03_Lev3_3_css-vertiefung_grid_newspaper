@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap');
+
+/* Farben: rgb(233, 233, 224), #333
+*/
+
+html{
+    scroll-behavior: smooth;
+    font-size: 18px;
+}
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background: rgb(233, 233, 224);
+}
+
+* {margin: 0;padding: 0;}
+
+header {
+    width: 100%;
+    height: 20vh;
+}
+header h1 {
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    font-variant: small-caps ;
+    padding: 2% 5%;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    border-top: 4px double #333;
+    border-bottom: 4px double #333;
+    padding: 6px 0;
+    margin: 0 5%;
+}
+li {
+    list-style: none;
+}
+h2 {
+    font-size: 1.2rem;
+}
+h3 {
+    font-size: 1em;
+}
+p {
+    font-size: 1rem;
+}
+main{
+    margin: 0 5%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5,20%);
+    grid-template-rows: 10vh 20vh 33vh 33vh 4vh; 
+    grid-template-areas: "A A A A J"
+                         "B C H H J"
+                         "D E H H J"
+                         "F G H H J"
+                         "F G I I J";
+                         height: 80vh;
+}
+
+#A {
+    text-align: center;
+    padding-top: 2%;
+    grid-area: A;
+}
+#B {
+    grid-area: B;
+}
+#C {
+    grid-area: C;
+}
+#D {
+    grid-area: D;
+}
+#E {
+    grid-area: E;
+}
+#F {
+    grid-area: F;
+}
+#G {
+    grid-area: G;
+}
+#H {
+    background: url(../img/kitchen.jpg) center/cover no-repeat;
+    grid-area: H;
+}
+#I {
+    grid-area: I;
+    padding-top: 2%;
+}
+#J {
+    height: 28vh;
+    text-align: center;
+    padding-top: 2%;
+    grid-area: J;
+}
+#J p {
+    font-weight: 700;
+}
+#J div {
+    height: 28vh;
+    border: 4px double #333;
+    padding: 5%;
+    margin-top: 5%;
+}
+#J h3 {
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 700;
+}
+div img {
+    height: 28vh;
+    width: 90%;
+}
