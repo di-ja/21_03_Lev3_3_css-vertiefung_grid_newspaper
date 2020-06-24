@@ -113,4 +113,5 @@ main{
 div img {
     height: 28vh;
     width: 90%;
+    filter: grayscale(100%);
 }
